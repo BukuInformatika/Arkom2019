@@ -44,3 +44,26 @@ Spesifikasi dari modul sensor suara seperti contoh pada gambar \ref{fig:sssensor
   \item Sudah terdapat lubang baut untuk instalasi.
   \item Sudah terdapat indikator led.
 \end{enumerate} 
+
+\section{Sensor Gas}
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/mq2.png}
+  \caption{Ini adalah Sensor suhu MQ-2 \cite{himawan2017perancangan}}\label{fig:mq2}
+\end{figure}	
+Sensor yang digunakan kali ini adalah sensor MQ-2 seperti pada gambar \ref{fig:mq2}, sensor ini digunakan untuk mendeteksi gas LPG, i-butana, propana, alkohol, hidroge, dan asap. Inti dari MQ-2 adalah material yang sensitif terhadap konsentrasi gas yang tersusun dari senyawa SnO2 atau Timah Oksida. Material ini mempunyai karakteristik yang akan merubah konduktivitasnya seiring dengan perubahan konsenterasi gas.
+Seri MQ sensor gas menggunakan pemanas kecil di dalamnya dengan sensor elektro-kimia. Mereka sensitif terhadap berbagai gas dan digunakan di dalam ruangan pada suhu kamar.
+Mereka dapat dikalibrasi lebih atau kurang lihat bagian tentang Load-resistor dan Burn-in namun diketahui konsentrasi gas atau gas yang diukur diperlukan untuk itu.
+Outputnya adalah sinyal analog dan bisa dibaca dengan input analog Arduino.
+Sedangkan untuk spesifikasi sensor MQ-2, adalah:
+\begin{itemize}
+\item suhu 20 derajat Celcius
+\item kelembaban udara 65 persen
+\end{itemize}
+range konsentrasi gas yang bisa diukur:
+\begin{itemize}
+\item LPG dan propana: 200ppm-5000ppm
+\item butana: 300ppm-5000ppm
+\item metana: 5000ppm - 20000ppm
+\end{itemize}
+
